@@ -1,4 +1,3 @@
-import { StatusBar, StyleSheet } from "react-native";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 
 import RestaurantScreen from "./src/features/restaurants/screens/restaurant.screen";
