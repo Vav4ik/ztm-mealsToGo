@@ -6,18 +6,19 @@ import styled from "styled-components/native";
 import RestaurantInfoCard from "../componets/restaurant-info-card.component";
 
 const SafeArea = styled.SafeAreaView`
-  margin-top: ${Platform.OS === "android" ? `${StatusBar.currentHeight}px` : "0px"};
+  margin-top: ${Platform.OS === "android"
+    ? `${StatusBar.currentHeight}px`
+    : `${(props) => props.theme.space[0]};`};
   flex: 1;
 `;
 
 const SearchContainer = styled.View`
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 const RestaurantListContainer = styled.View`
   flex: 1;
-  background-color: blue;
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 const RestaurantScreen = () => {
